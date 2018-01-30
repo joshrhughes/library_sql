@@ -3,7 +3,11 @@
 
 -- Find all fields (book and author related) for all books written by George R.R. Martin.
 
+SELECT * FROM authors JOIN books ON (authors.id & books.author_id = 8);
+
 -- Find all fields (book and author related) for all books written by Milan Kundera.
+
+SELECT * FROM authors JOIN books ON (authors.id & books.author_id = 6);
 
 -- Find all books written by an author from China or the UK.
 
